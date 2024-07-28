@@ -1,0 +1,166 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background-color: #F3F5FC;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    flex-direction: column; /* Los elementos se alinean en una columna */
+    align-items: center; /* Centra los elementos horizontalmente en el contenedor */
+    justify-content: center; /* Centra los elementos verticalmente en el contenedor */
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    width: 75vw; /* Asegura que el contenedor ocupe tres cuartos de la pantalla */
+    max-width: 100%;
+    margin: 0 auto; /* Centra el contenedor horizontalmente en la página */
+    position: relative; /* Para la posición absoluta de output-text */
+}
+
+
+
+
+
+.logo {
+    width: 200px;
+    margin-bottom: 20px;
+}
+
+
+
+
+.output-text {
+    background-color: #E0F7FA;
+    color: #333;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 30px; /* Aumenta el padding para mayor tamaño interno */
+    font-size: 16px;
+    cursor: not-allowed;
+    margin-top: 20px;
+    width: 25vw; /* Aumenta el ancho del cuadro de texto */
+    position: absolute;
+    left: calc(100% + 20px); /* Coloca a la derecha del contenedor con un pequeño espacio */
+    top: 0;
+    height: auto; /* Permite que el cuadro se expanda verticalmente según el contenido */
+}
+
+.input-text {
+    background-color: #E0F7FA; /* Un azul suave y claro */
+    color: #333; /* Texto en un color gris oscuro para buen contraste */
+    border-radius: 15px; /* Bordes redondeados */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para dar un efecto de elevación */
+    padding: 20px; /* Espacio interior */
+    font-size: 16px; /* Tamaño de fuente */
+    margin-top: 20px; /* Separación con elementos anteriores */
+    width: 60%; /* Ancho ajustado para que sea más estrecho */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.output-text {
+    background-color: #E0F7FA; /* Fondo azul suave */
+    color: #333; /* Texto gris oscuro */
+    border-radius: 10px; /* Bordes ligeramente redondeados */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    padding: 15px; /* Espacio interior reducido */
+    font-size: 16px; /* Tamaño de fuente */
+    cursor: not-allowed; /* Indica que el cuadro no es editable */
+    margin: 20px auto; /* Espacio superior e inferior, centrado horizontalmente */
+    width: 90%; /* Ancho ajustado al container */
+    max-width: 100%; /* Se asegura que ocupe todo el ancho disponible */
+    text-align: center; /* Centrar el texto */
+    line-height: 1.5; /* Mejora de la legibilidad */
+}
+
+
+
+
+.encrypt-btn,
+.decrypt-btn {
+    box-sizing: border-box;
+    display: inline-flex; /* Cambiado a inline-flex para alineación en línea */
+    align-items: center; /* Centrado vertical de contenido */
+    padding: 15px 30px; /* Ajuste del padding para un tamaño uniforme */
+    margin: 10px; /* Espaciado entre los botones */
+    font-size: 16px; /* Tamaño de fuente uniforme */
+    border-radius: 12px; /* Bordes ligeramente redondeados */
+    cursor: pointer; /* Manito para indicar clicabilidad */
+    text-align: center; /* Centrar el texto */
+    text-decoration: none; /* Sin subrayado */
+    transition: background-color 0.3s ease; /* Efecto de transición */
+}
+
+.encrypt-btn {
+    background: #3cb86c; /* Color de fondo verde */
+    border: 1px solid #4ec7a9; /* Borde verde claro */
+    color: #fff; /* Texto blanco */
+}
+
+.decrypt-btn {
+    background: #D8DFE8; /* Color de fondo gris claro */
+    border: 1px solid #0A3871; /* Borde azul oscuro */
+    color: #0A3871; /* Texto azul oscuro */
+}
+
+.encrypt-btn:hover,
+.decrypt-btn:hover {
+    background-color: #555; /* Color de fondo oscuro al pasar el cursor */
+    color: white; /* Color de texto blanco al pasar el cursor */
+}
+
+
+.encrypt-btn:hover, .decrypt-btn:hover {
+    background-color: #333;
+    color: white;
+}
+
+/* Resto del CSS existente */
+
+.copy-btn {
+   /* Button */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 24px;
+gap: 8px;
+
+width: 128px;
+height: 47px;
+
+/* Dark blue/dark-blue-300 */
+background: #1d8132;
+border-radius: 24px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+}
+
+.copy-btn:hover {
+    background-color: #333;
+    color: white;
+}
+
+.advertencia {
+    color: grey;
+    font-size: 14px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stiven Universe Translate</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <img src="imagenes/5b5208a9c051e602a568ce83.png" alt="Steven Universe Logo" class="logo">
+        <p>Stiven ahora solo entiende idioma alienigena! Si quieres comunicarte con el necesitaras este traductor para desencriptar y encriptar el mensaje...</p>
+        <textarea id="inputText" class="input-text" placeholder="Ingrese el texto aquí"></textarea>
+        <p class="advertencia">Solo letras minúsculas y sin acentos</p>
+        <div class="buttons">
+            <button onclick="encrypt()" class="encrypt-btn">Encriptar</button>
+            <button onclick="decrypt()" class="decrypt-btn">Desencriptar</button>
+        </div>
+        <textarea id="outputText" class="output-text" placeholder="Ningún mensaje fue encontrado" readonly></textarea>
+        <button onclick="copyToClipboard()" class="copy-btn">Copiar</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
